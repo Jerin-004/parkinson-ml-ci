@@ -31,3 +31,8 @@ jobs:
     - name: Run Tests
       run: |
         pytest tests/
+    
+    - name: Download dataset
+      run: |
+        mkdir -p data
+        wget -O data/parkinson_disease.csv https://media.geeksforgeeks.org/wp-content/uploads/20250122143413596644/parkinson_disease.csv
