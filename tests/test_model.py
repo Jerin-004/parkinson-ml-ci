@@ -2,7 +2,7 @@ import joblib
 import pandas as pd
 
 def test_model_prediction():
-    df = pd.read_csv("../data/parkinson_disease.csv")
+    df = pd.read_csv("/home/jerin/Documents/College_Work/MLOps/EXP2/parkinson-ml-ci/data/parkinson_disease.csv")
 
     if 'id' in df.columns:
         df = df.drop('id', axis=1)

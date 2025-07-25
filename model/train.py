@@ -4,7 +4,7 @@ from sklearn.ensemble import RandomForestClassifier
 import joblib
 
 # Load dataset
-df = pd.read_csv("../data/parkinson_disease.csv")
+df = pd.read_csv("/home/jerin/Documents/College_Work/MLOps/EXP2/parkinson-ml-ci/data/parkinson_disease.csv")
 
 # Drop non-numeric or non-feature columns if needed (like 'id' or 'gender')
 if 'id' in df.columns:
