@@ -29,3 +29,6 @@ def test_model_function():
     # Optional: print confusion matrix and classification report
     print("Confusion Matrix:\n", confusion_matrix(y, preds))
     print("Classification Report:\n", classification_report(y, preds))
+
+if __name__ == "__main__":
+    test_model_function()
