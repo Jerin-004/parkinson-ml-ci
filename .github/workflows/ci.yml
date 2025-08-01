@@ -36,5 +36,7 @@ jobs:
     - name: Run Tests
       run: |
         pytest tests/
-    
-    
+
+    - name: Check Model Accuracy
+      run: |
+        python tests/test_model.py
