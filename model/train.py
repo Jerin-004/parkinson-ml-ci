@@ -6,6 +6,7 @@ import joblib
 # Load dataset
 df = pd.read_csv("data/parkinson_disease.csv")
 
+print(df.columns)
 # Drop non-numeric or non-feature columns if needed (like 'id' or 'gender')
 if 'id' in df.columns:
     df = df.drop('id', axis=1)
