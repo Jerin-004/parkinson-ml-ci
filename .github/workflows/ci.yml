@@ -24,10 +24,10 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     
-    - name: Download dataset
-      run: |
-        mkdir -p data
-        wget -O data/parkinson_disease.csv https://media.geeksforgeeks.org/wp-content/uploads/20250122143413596644/parkinson_disease.csv
+    # - name: Download dataset
+    #   run: |
+    #     mkdir -p data+9
+    #     wget -O data/parkinson_disease.csv https://media.geeksforgeeks.org/wp-content/uploads/20250122143413596644/parkinson_disease.csv
 
     - name: Train the Model
       run: |
@@ -37,6 +37,6 @@ jobs:
       run: |
         pytest tests/
 
-    - name: Check Model Accuracy
-      run: |
-        python tests/test_model.py
+    # - name: Check Model Accuracy
+    #   run: |
+    #     python tests/test_model.py
